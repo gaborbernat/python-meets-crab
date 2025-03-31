@@ -1,0 +1,21 @@
+{
+  "name": "slidev",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "slidev build --out docs --base /python-meets-crab/",
+    "dev": "slidev --open",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@iconify-json/circle-flags": "^1.2.5",
+    "@iconify-json/fluent-mdl2": "^1.2.1",
+    "@iconify-json/logos": "^1.2.4",
+    "@iconify-json/prime": "^1.2.2",
+    "@iconify-json/uim": "^1.2.3",
+    "@slidev/cli": "^51.5.0",
+    "@slidev/theme-default": "^0.25.0",
+    "slidev-addon-qrcode": "^1.0.2",
+    "vue": "^3.5.13"
+  }
+}
