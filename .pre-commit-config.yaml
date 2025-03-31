@@ -1,0 +1,15 @@
+exclude: ^docs/.*$
+repos:
+  - repo: git@bbgithub.dev.bloomberg.com:pre-commit/pre-commit-hooks.git
+    rev: v5.0.0
+    hooks:
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+  - repo: git@bbgithub.dev.bloomberg.com:pre-commit/mirrors-prettier.git
+    rev: "v3.5.3"
+    hooks:
+      - id: prettier
+        additional_dependencies:
+          - "prettier@3.5.3"
+          - "prettier-plugin-slidev@1.0.5"
+        types_or: [markdown, vue]
