@@ -21,7 +21,7 @@ layout: cover
 
 <h1 highlight> 🐍 Python meets the crab 🦀 </h1>
 
-<h2 highlight> Friendship at first sight? — PyTexas <circle-flags-us-tx/> — April 13th 2025 </h2>
+<h2 highlight> Friendship at first sight? — PyCon US <circle-flags-us/> — May 15th 2025 </h2>
 
 ### By Bernát Gábor / [<logos-bluesky class="animate-pulse"/> gjbernat.bsky.social](https://bsky.app/profile/gjbernat.bsky.social) / [<prime-twitter class="animate-pulse"/> gjbernat](https://x.com/gjbernat)/ [<fluent-mdl2-website class="animate-pulse"/> bernat.tech]()
 
@@ -69,7 +69,7 @@ layout: full
 
 ---
 
-# Some of the packages I maintain
+# Packages I maintain (some)
 
 <Maintain />
 
@@ -784,6 +784,59 @@ layout: image
   platforms (especially bleeding new or old architectures).
 
 </v-clicks>
+
+---
+
+# Publish artifacts for user to consume
+
+Rust runs platform code, needs platform dependent wheels:
+
+<CopyrightImg img="publish_assets" maxHeight="470px"/>
+
+---
+
+# Publish artifacts for user to consume
+
+Generating YAML for GitHub Actions built-in:
+
+```shell
+maturin generate-ci github
+```
+
+<v-click>
+
+Once run, will generate and upload for a variaty of platforms:
+
+```shell
+Run PyO3/maturin-action@5f8a1b3b0aad13193f46c9131f9b9e663def8ce5
+maturin not found in [build-system.requires] section at ${pyprojectToml}, fallback to latest
+Found Rust toolchain 1.81 in rust-toolchain.toml 
+Install Rust target
+Install maturin
+...
+🔐 Using trusted publisher for upload
+🚀 Uploading 22 packages
+✨ Packages uploaded successfully
+```
+
+</v-click>
+
+---
+
+# Publish artifacts for user to consume
+
+Graph overview of a publish
+
+<CopyrightImg img="publish_jobs_graph" maxHeight="470px"/>
+
+---
+
+# Publish artifacts for user to consume
+
+Each platform has its own set of architecture.
+
+<CopyrightImg img="publish_jobs" maxHeight="470px"/>
+
 
 ---
 

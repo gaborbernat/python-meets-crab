@@ -6,6 +6,7 @@ interface Project {
   org: string;
   repo: string;
   author?: boolean;
+  highlight?: boolean;
 }
 const projects = ref<Project[]>([
   { name: "platformdirs", org: "tox-dev", repo: "platformdirs", author: true },
@@ -16,16 +17,16 @@ const projects = ref<Project[]>([
   { name: "pyproject-api", org: "tox-dev", repo: "pyproject-api", author: true },
   { name: "pipdeptree", org: "tox-dev", repo: "pipdeptree" },
   { name: "pytest-env", org: "pytest-dev", repo: "pytest-env" },
-  { name: "sphinx-autodoc-typehints", org: "tox-dev", repo: "sphinx-autodoc-typehints" },
-  { name: "pre-commit-uv", org: "tox-dev", repo: "pre-commit-uv", author: true },
   { name: "datamodel-code-generator", org: "koxudaxi", repo: "datamodel-code-generator" },
+  { name: "pre-commit-uv", org: "tox-dev", repo: "pre-commit-uv", author: true },
+  { name: "sphinx-autodoc-typehints", org: "tox-dev", repo: "sphinx-autodoc-typehints" },
   { name: "tox-uv", org: "tox-dev", repo: "tox-uv", author: true },
-  { name: "pyproject-fmt", org: "tox-dev", repo: "pyproject-fmt", author: true },
+  { name: "pyproject-fmt", org: "tox-dev", repo: "pyproject-fmt", author: true, highlight: true },
   { name: "tox-gh", org: "tox-dev", repo: "tox-gh", author: true },
-  { name: "sphinx-argparse-cli", org: "tox-dev", repo: "sphinx-argparse-cli", author: true },
   { name: "pytest-print", org: "pytest-dev", repo: "pytest-print", author: true },
+  { name: "sphinx-argparse-cli", org: "tox-dev", repo: "sphinx-argparse-cli", author: true },
   { name: "tox-ini-fmt", org: "tox-dev", repo: "tox-ini-fmt", author: true },
-  { name: "tox-toml-fmt", org: "tox-dev", repo: "tox-toml-fmt", author: true },
+  { name: "tox-toml-fmt", org: "tox-dev", repo: "tox-toml-fmt", author: true, highlight: true },
 ]);
 </script>
 
@@ -56,7 +57,12 @@ const projects = ref<Project[]>([
           {{ index + 1 }}
         </td>
         <td>
-          <a target="_blank" rel="noopener noreferrer" :href="`https://github.com/${project.org}/${project.repo}`">
+          <a
+            v-bind:class="project.highlight ? 'highlight' : ''"
+            target="_blank"
+            rel="noopener noreferrer"
+            :href="`https://github.com/${project.org}/${project.repo}`"
+          >
             {{ project.name }} <span v-if="project.author">*</span>
           </a>
         </td>
