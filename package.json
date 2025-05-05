@@ -3,7 +3,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "slidev build --out docs --base /python-meets-crab/",
+    "build": "slidev build --out docs --base /pages/bgabor8/python-meets-crab/",
     "dev": "slidev --open",
     "export": "slidev export"
   },

@@ -22,7 +22,7 @@
 }
 
 .right-0 {
-  padding-right: 3px;
+  padding-right: 6px;
 }
 
 .trademark {

@@ -36,7 +36,7 @@ layout: intro
 <div class="flex items-center">
   <div>
   <ul>
-    <li>software engineer at Bloomberg (Data Technologies - Storage Platform)</li>
+    <li>software engineer at Bloomberg (Artifact Repository Hosting)</li>
     <li v-click> OSS contributor <a target="_blank" href="https://github.com/gaborbernat">gaborbernat @ GitHub</a> - <a target="_blank" href="https://bernat.tech"> bernat.tech</a></li>
     <li v-click> member of the <span style="color: orange">Py</span>thon <span style="color: orange">P</span>ackaging <span style="color: orange">A</span>uthority (virtualen & build maintainer) </li>
     <li v-click> Husband to Lisa and parent to two Yorkshire Terriers: Silky & Junior </li>
@@ -810,7 +810,7 @@ Once run, will generate and upload for a variaty of platforms:
 ```shell
 Run PyO3/maturin-action@5f8a1b3b0aad13193f46c9131f9b9e663def8ce5
 maturin not found in [build-system.requires] section at ${pyprojectToml}, fallback to latest
-Found Rust toolchain 1.81 in rust-toolchain.toml 
+Found Rust toolchain 1.81 in rust-toolchain.toml
 Install Rust target
 Install maturin
 ...
@@ -836,7 +836,6 @@ Graph overview of a publish
 Each platform has its own set of architecture.
 
 <CopyrightImg img="publish_jobs" maxHeight="470px"/>
-
 
 ---
 
