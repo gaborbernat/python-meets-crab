@@ -2,12 +2,11 @@
 theme: default
 transition: none
 title: 🐍 Python meets the crab 🦀 - Friendship at first sight?
-info: Python's simplicity often comes at the cost of performance, especially in
-  computationally-intensive tasks. In contrast, Rust enables one to write
-  low-level code that takes full advantage of the underlying hardware.
-  Furthermore, Rust (just like Python) has a vibrant ecosystem with many great
-  libraries. PyO3 (together with the maturin build backend) allows you to easily
-  integrate the two languages together and make use of the best of both.
+info:
+  Python's simplicity often comes at the cost of performance, especially in computationally-intensive tasks. In
+  contrast, Rust enables one to write low-level code that takes full advantage of the underlying hardware. Furthermore,
+  Rust (just like Python) has a vibrant ecosystem with many great libraries. PyO3 (together with the maturin build
+  backend) allows you to easily integrate the two languages together and make use of the best of both.
 titleTemplate: "%s"
 author: Bernát Gábor
 mdc: true
