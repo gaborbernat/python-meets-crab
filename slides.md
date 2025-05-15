@@ -2,11 +2,12 @@
 theme: default
 transition: none
 title: 🐍 Python meets the crab 🦀 - Friendship at first sight?
-info:
-  Python's simplicity often comes at the cost of performance, especially in computationally-intensive tasks. In
-  contrast, Rust enables one to write low-level code that takes full advantage of the underlying hardware. Furthermore,
-  Rust (just like Python) has a vibrant ecosystem with many great libraries. PyO3 (together with the maturin build
-  backend) allows you to easily integrate the two languages together and make use of the best of both.
+info: Python's simplicity often comes at the cost of performance, especially in
+  computationally-intensive tasks. In contrast, Rust enables one to write
+  low-level code that takes full advantage of the underlying hardware.
+  Furthermore, Rust (just like Python) has a vibrant ecosystem with many great
+  libraries. PyO3 (together with the maturin build backend) allows you to easily
+  integrate the two languages together and make use of the best of both.
 titleTemplate: "%s"
 author: Bernát Gábor
 mdc: true
@@ -37,7 +38,7 @@ layout: intro
   <ul>
     <li>software engineer at Bloomberg (Artifact Repository Hosting)</li>
     <li v-click> OSS contributor <a target="_blank" href="https://github.com/gaborbernat">gaborbernat @ GitHub</a> - <a target="_blank" href="https://bernat.tech"> bernat.tech</a></li>
-    <li v-click> member of the <span style="color: orange">Py</span>thon <span style="color: orange">P</span>ackaging <span style="color: orange">A</span>uthority (virtualen & build maintainer) </li>
+    <li v-click> member of the <span style="color: orange">Py</span>thon <span style="color: orange">P</span>ackaging <span style="color: orange">A</span>uthority (virtualenv & build maintainer) </li>
     <li v-click> Husband to Lisa and parent to two Yorkshire Terriers: Silky & Junior </li>
     </ul>
   </div>
@@ -73,12 +74,6 @@ layout: full
 <Maintain />
 
 ---
-layout: statement
----
-
-<h1>No such thing as a stupid question, just a <span highlight>missed opportunity to learn</span></h1>
-
----
 
 # What is Python?
 
@@ -86,7 +81,7 @@ layout: statement
 
 <v-clicks>
 
-- Garbace collected (no memory management).
+- Garbage collected (no memory management).
 - Interpreted language (though has a compilation phase, but to intermediate VM code).
 - Optionally typed (not used at runtime).
 - Error handling via exceptions.
@@ -324,7 +319,7 @@ layout: image
   <li v-click><span highlight>Speed</span> - performance!</li>
   <li v-click><span highlight>Reliability</span> - no GC causes smaller max latency (<a href="https://github.com/emmett-framework/granian">granian</a>)</li>
   <li v-click><span highlight>Feature re-use</span>: e.g. <a href="https://taplo.tamasfe.dev/">taplo</a> is a great TOML formatter</li>
-  <li v-click>Slighthly easier <span highlight>security</span> models than C - the ownership modal ensures no memory corruption</li>
+  <li v-click>Slighthly easier <span highlight>security</span> models than C - the ownership model ensures no memory corruption</li>
   <li v-click><span highlight>Concurrency</span> - until thread free Python becomes a thing, Rust can give you that now</li>
   <li v-click>Experience in the <span highlight>joy</span> (and misery) of both languages (learning Rust features will make you better at Python)</li>
 </ul>
@@ -373,10 +368,10 @@ layout: image
   [ruff](https://docs.astral.sh/ruff/) - linter and code formatter for Python,
 - <a style="display: inline-flex" href="https://pepy.tech/projects/tokenizers"><img src="https://static.pepy.tech/badge/tokenizers/month" alt="PyPI Downloads"></a>&nbsp;
   [tokenizers](https://github.com/huggingface/tokenizers#main-features) - by Hugging Face,
-- <a style="display: inline-flex" href="https://pepy.tech/projects/tiktoken"><img src="https://static.pepy.tech/badge/tiktoken/month" alt="PyPI Downloads"></a>&nbsp;
-  [tiktoken](https://github.com/openai/tiktoken) - a fast BPE tokeniser for use with OpenAI's models,
 - <a style="display: inline-flex" href="https://pepy.tech/projects/uv"><img src="https://static.pepy.tech/badge/uv/month" alt="PyPI Downloads"></a>&nbsp;
   [uv](https://docs.astral.sh/uv/) - the new era one stop shop for Python packaging,
+- <a style="display: inline-flex" href="https://pepy.tech/projects/tiktoken"><img src="https://static.pepy.tech/badge/tiktoken/month" alt="PyPI Downloads"></a>&nbsp;
+  [tiktoken](https://github.com/openai/tiktoken) - a fast BPE tokeniser for use with OpenAI's models,
 - <a style="display: inline-flex" href="https://pepy.tech/projects/polars"><img src="https://static.pepy.tech/badge/polars/month" alt="PyPI Downloads"></a>&nbsp;
   [polars](https://pola.rs/) - data manipulation via DataFrames,
 - <a style="display: inline-flex" href="https://pepy.tech/projects/deltalake"><img src="https://static.pepy.tech/badge/deltalake/month" alt="PyPI Downloads"></a>&nbsp;
@@ -443,7 +438,7 @@ assert first_n(5) == [2, 3, 5, 7, 11, 13, 17]
 A natural (integer) number is prime if <span highlight>greater than 1</span>, and <span highlight>not a product of two
 smaller natural numbers.</span>
 
-```python {1-11|2|3,4,10|5-7|8-9|1-11|13-14|all}{lines:true,startLine:1}
+```python {1-11|2,11|3,4,10|5-7|8-9|all}{lines:true,startLine:1}
 def first_n(count: int) -> list[int]:
     primes: list[int] = []
     at = 2
@@ -956,8 +951,14 @@ layout: center
 - [https://docs.rs/pyo3](https://docs.rs/pyo3)
 - IDE:
   - [RustRover](https://www.jetbrains.com/rust/) by JetBrains,
-  - [VSCode Rust](https://code.visualstudio.com/docs/languages/rust).
+  - [VSCode Rust](https://code.visualstudio.com/docs/lanuages/rust).
 - Your favorite AI helper.
+
+---
+layout: statement
+---
+
+<h1>No such thing as a stupid question, just a <span highlight>missed opportunity to learn</span></h1>
 
 ---
 
